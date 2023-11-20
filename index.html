@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div
+      class="w-full h-screen bg-green-600 flex flex-col justify-center items-center"
+    >
+      <div>
+        <div
+          id="quote-box"
+          class="w-[500px] h-64 flex justify-between flex-col bg-slate-100 rounded px-12 py-8"
+        >
+        <div>
+          <div class="text-center">
+            <p id="text" class="text-xl">
+              <i class="fa fa-quote-left"></i> Why do we tell actors to “break
+              a leg? Because every play has a cast.
+            </p>
+          </div>
+          <div>
+            <p class="float-right text-lg mt-6 mr-2" id="author">
+              - Tim Vine
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-between items-center">
+          <div class="flex gap-4">
+            <a
+              href="https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=%22Every%20strike%20brings%20me%20closer%20to%20the%20next%20home%20run.%22%20Babe%20Ruth"
+              id="tweet-quote"
+              target="_blank"
+            >
+              <i
+                class="fa-brands fa-twitter text-lg bg-black py-2 px-3 rounded-md text-white"
+              ></i
+            ></a>
+
+            <a
+              href="https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=Babe%20Ruth&content=Every%20strike%20brings%20me%20closer%20to%20the%20next%20home%20run.&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button"
+            >
+              <i
+                class="fa-brands fa-tumblr text-lg bg-black py-2 px-4 rounded-md text-white"
+              ></i>
+            </a>
+          </div>
+          <button
+            id="new-quote"
+            class="text-md hover:shadow-lg bg-black py-2 text-white rounded-md px-4"
+          >
+            New quote
+          </button>
+        </div>
+        </div>
+      </div>
+      <p class="text-xl mt-3 text-xm cursor-pointer" id="authorName">
+        by sulimanhakimi
+      </p>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
