@@ -1,7 +1,6 @@
 let textArea = document.getElementById("text");
 let writerName = document.getElementById("author");
 let btn = document.getElementById("new-quote");
-let authorName = document.getElementById("authorName");
 
 let i = 0;
 async function apiCall() {
@@ -19,6 +18,5 @@ btn.addEventListener("click", () => {
   apiCall().then((res) => {
     textArea.innerHTML = `<i class="fa fa-quote-left"></i> ${res.joke[i].joke}`;
     writerName.innerText = `- ${res.joke[i].writer}`;
-    authorName.innerText = ` by ${res.joke[i].author}`;
   });
 });
